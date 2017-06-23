@@ -2,7 +2,7 @@
  * Created by giladtakoni on 23/06/2017.
  */
 
-import { Component, Input, Output, EventEmitter} from '@angular/core';
+import {Component, Input, Output, EventEmitter, OnChanges, OnInit} from '@angular/core';
 
 import { Passenger } from '../../models/passenger.interface';
 
@@ -49,7 +49,7 @@ import { Passenger } from '../../models/passenger.interface';
         </div>
     `
 })
-export class PassengerDetailPassenger {
+export class PassengerDetailPassenger implements OnChanges, OnInit{
 
     @Input()
     detail: Passenger;
@@ -63,6 +63,14 @@ export class PassengerDetailPassenger {
     editing: boolean = false;
 
     constructor(){}
+
+    ngOnChanges(changes){
+        if(changes.detail){
+            this.detail = Object.assign({},changes.detail.currentValue);
+        }
+    }
+
+    ngOnInit(){}
 
     onNameChange(value: string){
         this.detail.fullname = value;
