@@ -14,12 +14,11 @@ import { Passenger } from '../../models/passenger.interface';
             <span
                     class="status"
                     [ngStyle]="{
-                                'backgroundColor':(detail.checkedIn ? '#2ecc71' : '#c0392b')
+                               'backgroundColor':(detail.checkedIn ? '#2ecc71' : '#c0392b')
                             }"></span>
             
             <div *ngIf="editing">
                 <input 
-                        
                         type="text" 
                         (input)="onNameChange(name.value)"
                         [value]="detail.fullname"
@@ -35,9 +34,6 @@ import { Passenger } from '../../models/passenger.interface';
                 {{ detail.checkInDate ?  (detail.checkInDate | date: 'yMMMMd' | uppercase) : 'Not checked in' }}
             </div>
 
-            <div class="children">
-                Children: {{ detail.children?.length || 0 }}
-            </div>
             
             <button (click)="toggleEdit()">
                 {{ editing ? 'Done' : 'Edit' }}

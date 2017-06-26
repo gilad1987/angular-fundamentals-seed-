@@ -21,8 +21,7 @@ import { PassengerDashboardService } from "../../passenger-dashboard.service";
                     *ngFor="let passenger of passengers;"
                     [detail]="passenger"
                     (remove)="handelRemove($event)"
-                    (edit)="handelEdit($event)"
-            >
+                    (edit)="handelEdit($event)">
             </passenger-detail>
 
         </div>
