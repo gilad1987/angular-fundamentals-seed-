@@ -29,7 +29,7 @@ export class PassengerDashboardService{
     }
 
 
-    updatePassengers( passenger: Passenger ): Observable<Passenger>{
+    updatePassenger( passenger: Passenger ): Observable<Passenger>{
 
         let headers = new Headers({
            'Content-Type':'application/json'

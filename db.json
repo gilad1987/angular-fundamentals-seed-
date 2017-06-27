@@ -1,11 +1,10 @@
 {
   "passengers": [
     {
+      "fullname": "Gilad takoni",
       "id": 1,
-      "fullname": "Gilad Takoni",
       "checkedIn": true,
-      "checkInDate": 1490742000000,
-      "baggage": ""
+      "baggage": "hold-only"
     },
     {
       "id": 2,
