@@ -10,9 +10,6 @@ import { Baggage } from "../../models/baggage.interface";
         <form (ngSubmit)="handelSubmit(form.value, form.valid)" #form="ngForm" novalidate>
             Form!
 
-            {{ detail | json }}
-            
-            
             <div>
                 Passenger name:
                 <input

@@ -1,7 +1,7 @@
 {
   "passengers": [
     {
-      "fullname": "Gilad takoni",
+      "fullname": "Gilad takonisdfsdf",
       "id": 1,
       "checkedIn": true,
       "baggage": "hold-only"
@@ -11,13 +11,6 @@
       "fullname": "Rose",
       "checkedIn": false,
       "checkInDate": null,
-      "baggage": ""
-    },
-    {
-      "id": 4,
-      "fullname": "Louise",
-      "checkedIn": true,
-      "checkInDate": 1488412800000,
       "baggage": ""
     },
     {
